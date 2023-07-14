@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newslettr-container{
+    width: 100vw;
+    height: 100vh;
+    background: #123456;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container{
+    width: 60%;
+    height: 70%;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+}
+
+.left-box{
+    flex-basis: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box{
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-box img{
+    max-width: 90%;
+    height: 90%;
+}
+li{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.iconi{
+    background: rgba(255, 68, 0, 0.701);
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.head{
+    width: 100%;
+}
+
+.big-tect{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.para{
+    width: 100%;
+}
+
+.ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    padding: 15px ;
+    border-radius: 7px;
+    border: 1px solid #212121;
+}
+
+.input-field.error .input-label{
+    color: #c02a2a;
+}
+
+.input-field.error input{
+    color: #c02a2a;
+    border: 1px solid #af1818;
+}
+
+button{
+    padding: 7px;
+    background: #123456;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.conformbox{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d2b5b;
+    display: none;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orangered;
+    border-radius: 50%;
+    margin: 10px 20px;
+    color: #fff;
+}
+
+.conform{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.conform .big-text{
+    padding: 0px 20px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.conform .text{
+    padding: 0px 20px;
+}
+
+.dismiss{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:426px) {
+    .inner-container {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 92%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .inner-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .big-tect {
+        font-size: 31px;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 10px;
+    }
+
+    .ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    li {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        font-size: 10px;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .input-field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    button {
+        padding: 7px;
+        background: #123456;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .right-box {
+        flex-basis: 30%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-box img {
+        width: 75%;
+        height: 89%;
+    }
+
+    .conform .big-text {
+        padding: 0px 20px;
+        text-transform: capitalize;
+        font-weight: 800;
+        font-size: 22px;
+    }
+
+    .conform .text {
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+
+    .dismiss {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+}

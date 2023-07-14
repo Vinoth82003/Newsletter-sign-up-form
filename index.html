@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News letter form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="newslettr-container">
+        <div class="inner-container">
+            <div class="left-box">
+                <div class="inner-box">
+                    <div class="head">
+                        <h1 class="big-tect">Stay updated !</h1>
+                    </div>
+                    <div class="para">
+                        <p class="text">Join 60,000+ product managers receiving monthly updates on :</p>
+                    </div>
+                    <ul class="ul">
+                            <li class="listItem">
+                                <i class="iconi fas fa-check"></i> Product discovery and building what matters
+                            </li>
+                            <li class="listItem">
+                                <i class="iconi fas fa-check"></i> 
+                                Measuring to ensure updates are success
+                            </li>
+                            <li class="listItem">
+                                <i class="iconi fas fa-check"></i> 
+                                And much more! 
+                            </li>
+                    </ul>
+                    <form method="post" class="form">
+                            <div class="input-field " id="field">
+                                <div class="input-label">
+                                    <label for="email">Email address</label>
+                                     <div class="error" id="error"></div>
+                                </div>
+                                <input type="email" name="email" id="email" placeholder="email@company.com">
+                            </div>
+                            <button type="button" class="subscrib">Subcribe to monthly newsletter</button>
+                    </form> 
+                </div>
+            </div>
+            <div class="right-box">
+                <img src="/img/newsletter1.jpg" alt="">
+            </div>
+        </div>
+        <div class="conformbox">
+            <div class="conform">
+                <div class="head">
+                    <i class="icon fas fa-check"></i> 
+                </div>
+                <h1 class="big-text">
+                    thanks for subscribing! 
+                </h1>
+                <p class="text conformText" id="conformText">
+                </p>
+                <button type="button" class="dismiss">Dissmiss message</button>    
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
